@@ -1,0 +1,127 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.block-1{
+    display: flex;
+    height: 780px;
+}
+
+/* Стили карусели */
+.slider{
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Позиционирование слайдбаров */
+
+.leftpos{
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.navigation{
+    position: absolute;
+    bottom: 40px;
+    left: 10%;
+    transform: translateX(-10%);
+    display: flex;
+}
+
+/* Слайд бары */
+.slidebar{
+    width: 35px;
+    height: 4px;
+    cursor: pointer;
+    margin: 6px;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    transition: 1s linear;
+}
+.slidebar:hover{
+    background-color: #182B5A;
+    transform: scale(1.1);
+}
+
+/* Скрываем радиобатаны */
+
+input[name="s"]{
+    position: absolute;
+    visibility: hidden;
+} 
+
+/* Настраиваем контент(img, text, btn) */
+
+.slider-navigation{
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+
+.content{
+    width: 25%;
+    transition: all .6s ease;
+}
+.content img{
+    width: 100%;
+    height: 100%;
+}
+
+.content-text{ 
+    left: 9%;
+    top: 35%; 
+    position:absolute;
+}
+
+/* Стили текстового блока */
+.content-text button{
+    margin-top: 20px;
+    width: 230px;
+    height: 50px;
+    font-size: 1em;
+    border: 3px solid #182B5A;
+    font-family: Noto Sans, serif; 
+    color: #182B5A;
+    text-align: center;
+    background-color: transparent;
+    -webkit-transition: 1s ease; /* Safari and Chrome */
+    -moz-transition: 1s ease; /* Firefox 4 */
+    -o-transition: 1s ease; /* Opera */
+}
+.content-text p{
+    font-family: Noto Sans, serif;
+    color: #182B5A;
+    font-size: 40px;
+    font-weight: bold;
+
+}
+
+/* Анимация наведения на кнопку */
+button:hover{
+    transform: scale(0.9);
+    background-color: rgba(255, 255, 255, 0.452);
+}
+
+/* @keyframes btnhover{
+    100%{
+        transform: scale(0.9);
+        background-color: rgba(255, 255, 255, 0.452);
+    }
+} */
+
+/* Анимация перехода со слайда на слайд */
+#s1:checked ~ .c1{
+    margin-left: 0;
+}
+#s2:checked ~ .c1{
+    margin-left: -25%;
+}
+#s3:checked ~ .c1{
+    margin-left: -50%;
+}
+#s4:checked ~ .c1{
+    margin-left: -75%;
+}
+

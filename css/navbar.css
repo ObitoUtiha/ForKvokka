@@ -78,13 +78,16 @@ body{
     display: none;
 }
 
+/* Медиа */
+
+/* 1366px */
 @media (max-width: 1367px){
     .nav-info-logo>img{
         width: 36px;
         height: 42px;
    }
 }
-
+/* 1036px */
 @media (max-width: 1025px){
     .navbar{
         margin-left: 30px;
@@ -100,6 +103,8 @@ body{
          height: 33px;
     }
 }
+
+/* 480px */
 
 @media (max-width: 580px){
     .nav-content{
