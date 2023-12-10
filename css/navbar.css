@@ -110,7 +110,6 @@ body{
         cursor: pointer;
     }
     .drop:hover .nav-content{
-        background-color: #FFF;
         display: block;
         position: absolute;
         right: auto;
