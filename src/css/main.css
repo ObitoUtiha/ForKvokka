@@ -241,3 +241,66 @@ button:hover{
     height: 100%;
     background:  url('/src/img/Vector.png') right top no-repeat;
 }
+
+/* Третий блок */
+
+.third-block{
+    padding-top: 100px;
+    padding-bottom: 120px;
+    display: flex;
+    justify-content: center;
+}
+
+.block-3-text{
+    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 804px;
+}
+
+.block-3-text button{
+    margin-top: 20px;
+    background-color: transparent;
+    width: 165px;
+    height: 50px;
+    color: #182B5A;
+    font-family: Noto Sans, sans-serif;
+    font-size: 1em;
+    border: 3px solid #182B5A;
+    -webkit-transition: 1s ease; /* Safari and Chrome */
+    -moz-transition: 1s ease; /* Firefox 4 */
+    -o-transition: 1s ease; /* Opera */
+}
+
+.block-3-text p{
+    color: #000;
+    font-family: Roboto, sans-serif;
+    font-size: 1em;
+}
+
+.block-3-text h1{
+    
+    color: #182B5A;
+    font-family: Noto Sans, sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.back-box{
+    width: 763px;
+    height: 510px;
+    background: #182B5A url('../img/Vector-block-3.png') center no-repeat;
+}
+
+.third-block img{
+    top: 50px;
+    left: 50px;
+    position: absolute;
+}
+
+.media-conteiner{
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
