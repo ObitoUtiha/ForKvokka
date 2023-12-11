@@ -12,6 +12,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="img/favicon_io/site.webmanifest">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <title>Salesprodazha</title>
 </head>
 
@@ -125,7 +126,54 @@
                         <p>Соглашаюсь с <a href="#">политикой конфиденциальности</a></p>
                     </div>
                     <button>ОТПРАВИТЬ</button>
-                </div>                
+                </div>
+            </div>
+            <div class="fifth-block">
+                <div id="map" style="height: 392px; width: 50%"></div>
+
+                <div class="map-text">
+                    <h2>Контакты и юридическая информация</h2>
+                    <div class="map-holders">
+                        <div class="items-4">
+                            <div class="map-holder">
+                                <img src="./img/icons/map-point.svg" alt="map point">
+                                <p>121069, г. Москва, ул. Поварская, дом 23, строение 4</p>
+                            </div>
+                            <div class="map-holder">
+                                <img src="./img/icons/phone-icon.svg" alt="phone icon">
+                                <p>+7 (495)258-6100</p>
+                            </div>
+                            <div class="map-holder">
+                                <img src="./img/icons/dog-symbol.svg" alt="at icon">
+                                <p>info@sksbank.ru</p>
+                            </div>
+                            <div class="map-holder">
+                                <img src="./img/icons/clock-icon.svg" alt="clock icon">
+                                <p>Пн-Пт: 9:00 - 18:00</p>
+                            </div>
+                        </div>
+
+                        <div class="items-8">
+                            <div class="map-holder">
+                                <p id="requisites">ИНН:</p>
+                                <p>7750005845</p>
+                            </div>
+                            <div class="map-holder">
+                                <p id="requisites">БИК:</p>
+                                <p>044525247 </p>
+                            </div>
+                            <div class="map-holder">
+                                <p id="requisites">ОКПО:</p>
+                                <p>29319716 </p>
+                            </div>
+                            <div class="map-holder">
+                                <p id="requisites">ОГРН:</p>
+                                <p>1137711000096 (05.07.2013)</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -133,8 +181,27 @@
     <footer>
 
     </footer>
+    <script type="text/javascript">
+        ymaps.ready(init);
+        function init() {
 
-    <script src="js/script.js"></script>
+            var myMap = new ymaps.Map("map", {
+
+                center: [51.74, 36.19],
+                zoom: 15,
+                controls: [
+                ]
+            });
+
+            var myPlacemark = new ymaps.Placemark([51.737936, 36.192377], {
+                hintContent: 'Пушкинский',
+                balloonContent: 'Пушкинский'
+            });
+
+            myMap.geoObjects.add(myPlacemark);
+
+        }
+    </script>
 </body>
 
 
