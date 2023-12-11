@@ -1,8 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #FFF;
+}
+
+
+
 html {
     scroll-behavior: smooth;
 }
 
-.block-1{
+/* Первый блок */
+.first-block{
     display: flex;
     height: 780px;
 }
@@ -125,3 +140,104 @@ button:hover{
     margin-left: -75%;
 }
 
+/* Второй блок */
+.second-block{
+    width: 100%;
+    display: flex;
+    height: 740px;
+}
+
+.wrapper {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.wrapper-info{
+    align-items: center;
+    top: 48%;
+    left: 10%;
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper-info p{
+    color: #FEFEFE;
+    font-family: Noto Sans;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.wrapper-info button{
+    margin-top: 25px;
+    width: 320px;
+    height: 55px;
+    color: #FEFEFE;
+    background-color: transparent;
+    font-family: Noto Sans;
+    font-size: 16px;
+    font-style: normal;
+    border: 3px solid #FEFEFE;
+    -webkit-transition: 1s ease; /* Safari and Chrome */
+    -moz-transition: 1s ease; /* Firefox 4 */
+    -o-transition: 1s ease; /* Opera */
+}
+.first-layer{
+    text-align: right;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    z-index: 4;
+}
+
+.second-layer{
+    height: 100%;
+    position: absolute;
+    z-index: 1; 
+}
+
+.second-layer img{
+    clip-path: polygon(0 0, 100% 0, 83% 100%, 0 100%);
+    height: 100%;
+    width: 85%;
+}
+
+.first-layer img{
+    clip-path: polygon(13% 0%, 100% 0, 100% 100%, 0 100%);
+    width: 1057px;
+    height: 605px;
+}
+
+.first-layer p{
+    margin: 43px 240px 43px 10px;
+    color: #FEFEFE;
+    font-family: Noto Sans;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.third-layer{
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background: #182B5A;
+}
+
+.thourh-layer{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1; 
+    background: rgba(24, 43, 90, 0.90);
+}
+
+.fifth-layer{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background:  url('/src/img/Vector.png') right top no-repeat;
+}
