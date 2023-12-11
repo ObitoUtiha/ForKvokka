@@ -6,3 +6,12 @@
 	src: url(./fonts/LetoSans-Regular.woff2) format('woff2'),
 		 url(./fonts/LetoSans-Regular.woff) format('woff');
   }
+
+  @font-face {
+	font-family: 'Muller';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url(./fonts/muller-regular.woff2) format('woff2'),
+		 url(./fonts/muller-regular.woff) format('woff');
+  }
