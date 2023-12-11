@@ -391,3 +391,57 @@ input[type=text]::placeholder {
     font-family: Roboto, sans-serif;
     font-size: 1em;
 }
+
+
+/* Пятый блок */
+
+.map-text{
+padding-left: 60px;
+}
+
+.fifth-block{
+    display: flex;
+}
+
+.map-holders{
+    display: grid;
+    grid-column-gap: 50px;
+    grid-template-columns: 1fr 0.55fr;
+}
+
+.items-4,
+.items-8{
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+    margin-left: 36px;
+}
+
+.map-holder{
+    align-items: center;
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+}
+
+
+.map-holder p{
+    margin: 10px;
+    margin-left: -40px;
+    color: #000;
+    font-family: Roboto, sans-serif;
+    font-size: 1em;
+}
+
+#requisites{
+    color: #182B5A;
+}
+
+h2{
+    position: relative;
+    top: 80px;
+    left: 4%;
+    color: #182B5A;
+    font-family: Noto Sans;
+    font-size: 2em;
+    font-weight: bold;
+}
