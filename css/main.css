@@ -424,6 +424,12 @@ padding-left: 60px;
 }
 
 
+.map-holder a{
+    text-decoration: none;
+    color: #000;
+
+}
+
 .map-holder p{
     margin: 10px;
     margin-left: -40px;
@@ -444,4 +450,21 @@ h2{
     font-family: Noto Sans;
     font-size: 2em;
     font-weight: bold;
+}
+
+footer{
+    height: 273px;
+    background: #182B5A url('../img/footer.svg') center no-repeat;
+}
+
+.footer-text{
+    margin-left: 100px;
+    padding-top: 60px;
+}
+
+.footer-text p{
+    color: #FEFEFE;
+    margin-bottom: 1em;
+    font-family: Roboto, sans-serif;
+    font-size: 1em;
 }
