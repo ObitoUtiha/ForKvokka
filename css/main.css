@@ -497,7 +497,7 @@ footer{
 
 /* Разрешние под 1366 */
 
-@media (max-width: 1400px){
+@media (max-width: 1550px){
     .content img{
         height: 60vh;
     }
@@ -542,4 +542,364 @@ footer{
         font-size: 24px;
     }
 
+    .thourh-layer,
+    .wrapper-info button{
+        visibility: hidden;
+    }
+
+    .wrapper p{
+        font-size: 24px;
+    }
+
+    .first-layer p{
+        margin: 26px 456px 26px 0px
+    }
+
+    .first-layer{
+        background: url('../img/Vector.png') no-repeat top right 47px;
+    }
+
+    .first-layer img{
+        right: 69px;
+        clip-path: polygon(14% 0%, 100% 0, 100% 100%, 0 100%);
+        width: 1023px;
+        height: 650px;
+    }
+    
+    .second-layer{
+        width: 100%;
+        height: 100%;
+        background: url('../img/Vector.png') no-repeat bottom left 60px;
+    }
+
+    .second-layer img{
+        clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+        height: 85%;
+        left: 82px;
+    }
+
+    .wrapper-info{
+        top: 90%;
+    }
+}
+
+/* Разрешение 1024 */
+@media (max-width: 1300px){
+    
+    .content-text p{
+        font-size: 24px;
+    }
+
+    .content-text button{
+        font-size: 14px;
+        width: 200px;
+        height: 40px;
+    }
+
+    .content img{
+        height: 40vh;
+    }
+
+    .first-block{
+        height: 40vh;
+    }
+
+    .block-3-text br{
+        display: none;
+    }
+
+    .block-3-text h1{
+        margin-bottom: 20px;
+    }
+
+    .block-3-text p{
+        font-size: 14px;
+    }
+
+    .block-3-text button{
+        width: 131px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .back-box,
+    .third-block img
+    {
+        width: 369px;
+        height: 357px;
+    }
+
+    .third-block img{
+        top: 21px;
+        left: 13px;
+    }
+
+    .footer-text p{
+        font-size: 14px;
+    }
+
+    .fifth-block{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .map-styles{
+        width: 100%;
+        height: 298px;
+    }
+
+    .map-holders{
+        margin-left: -100px;
+        display: grid;
+        grid-column-gap: 0;
+        grid-template-columns: 1fr 0.7fr;
+        margin-bottom: 20px;
+    }
+    
+    .items-4,
+    .items-8{
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px;
+        margin-left: 130px;
+    }
+    
+    .map-holder{
+        align-items: center;
+        display: grid;
+        grid-template-columns: 0.3fr 1fr;
+    }
+
+    h2{
+        top: 40px;
+        left: 0;
+        text-align: center;
+    }
+
+    .items-8 #requisites{
+        margin-left: -50px;
+    }
+
+    .fourth-block{
+        background-size: 300px, 200px;
+    }
+
+    .fourth-block>p{
+        font-size: 24px;
+    }
+
+    .wrapper p{
+        font-size: 1em;
+    }
+
+    .second-block{
+        height: 334px;
+    }
+
+    .first-layer img {
+        right: 21px;
+        clip-path: polygon(10% 0%, 100% 0, 100% 100%, 0 100%);
+        width: 547px;
+        height: 254px;
+    }
+
+    .second-layer img {
+        clip-path: polygon(0 0, 100% 0, 91% 100%, 0 100%);
+        height: 85%;
+        width: 739px;
+        left: 0px;
+    }
+    
+    .first-layer img {
+        right: 67px;
+        clip-path: polygon(10% 0%, 100% 0, 100% 100%, 0 100%);
+        width: 639px;
+        height: 277px;
+    }
+
+    .first-layer p {
+        margin: 9px 331px 19px 0px;
+    }
+
+    .wrapper-info {
+        top: 89%;
+        left: 11.5%;
+    }
+}
+
+@media (max-width: 753px){
+    .content img{
+        height: 28vh;
+    }
+
+    .first-block{
+        height: 28vh;
+    }
+
+
+    .content-text{
+        left: 18%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .content-text p {
+        font-size: 1em;
+    }
+
+    .content-text button {
+        font-size: 14px;
+        width: 170px;
+        height: 40px;
+    }
+
+    .navigation{
+        left: 44%;
+        transform: translateX(-30%);
+    }
+
+    .second-block {
+        height: 260px;
+    }
+
+    .first-layer img {
+        right: -20px;
+        clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0 100%);
+        width: 220px;
+        height: 190px;
+    }
+
+    .second-layer img {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        height: 85%;
+        width: 739px;
+        left: 0px;
+    }
+
+    .media-conteiner {
+        display: none;
+    }
+
+    .block-3-text {
+        text-align: center;
+        padding-left: 25px;
+        width: 440px;
+        align-items: center;
+    }
+
+    .fourth-block>p {
+        text-align: center;
+        font-size: 18px;
+        width: 282px;
+    }
+
+    .fourth-block>p{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .fourth-block {
+        background-color: #182B5A;
+        background-repeat: no-repeat;
+        background-position: bottom left 20px, bottom right 40px;
+        background-image: none;
+    }
+
+    .form>input {
+        width: 361px;
+        height: 50px;
+    }
+    
+
+    .footer-text {
+        text-align: center;
+        padding-top: 20px;
+        padding-right: 90px;
+    }
+
+    footer {
+        height: 333px;
+    }
+
+    .map-holders{
+        text-align: center;
+        grid-template-columns: auto;
+    }
+
+    .items-8 #requisites{
+        text-align: start;
+        margin-left: 1px;
+    }
+
+    .items-4{
+      margin-top: 70px;
+    }
+
+    .items-4::after{
+        margin-top: 39px;
+        margin-bottom: 39px;
+        content: "";
+        width: 440px;
+        height: 2px;
+        background-color: #C4C4C4;
+    }
+
+    .items-8{
+        margin-top: 31px;
+    }
+
+    h2{
+        top:40px;
+        font-size: 18px;
+    }
+    .map-text {
+        padding-left: 2px;
+    }
+    .items-4, .items-8{
+        align-items: center;
+    }
+    .items-4 img{
+        margin-right: 60px;
+    }
+    .items-8 #requisites {
+        text-align: start;
+        margin-right: 48px;
+    } 
+    
+    input[type=text]::placeholder {
+        text-align: center;
+    }
+    .form>input{
+        text-align: center;
+        padding: 0;
+    }
+
+    .wrapper-info {
+        top: 85%;
+        left: -6%;
+    }
+    .first-layer img {
+        right: 12px;
+        clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0 100%);
+        width: 267px;
+        height: 200px;
+    }
+    .first-layer p {
+        margin: 17px 71px 14px 0px;
+    }
+    .second-layer {
+        width: 68%;
+        height: 100%;
+        background: url(../img/Vector.png) no-repeat bottom left 60px;
+    }
+    .second-layer img {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        height: 80%;
+        width: 400px;
+        left: -25px;
+    }
+    .first-layer {
+        background: url(../img/Vector.png) no-repeat top right 40px;
+    }
 }
