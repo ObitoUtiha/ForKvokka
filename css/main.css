@@ -728,7 +728,15 @@ footer{
     }
 }
 
-@media (max-width: 753px){
+@media(max-width: 753px){
+    .wrapper-info {
+        top: 89%;
+        left: 0.5%;
+    }
+}
+
+
+@media (max-width: 662px){
     .content img{
         height: 28vh;
     }
@@ -876,30 +884,98 @@ footer{
     }
 
     .wrapper-info {
-        top: 85%;
-        left: -6%;
+        top: 2%;
+        left: -12%;
     }
+
     .first-layer img {
-        right: 12px;
+        right: -3px;
         clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0 100%);
-        width: 267px;
-        height: 200px;
-    }
-    .first-layer p {
-        margin: 17px 71px 14px 0px;
-    }
-    .second-layer {
-        width: 68%;
-        height: 100%;
-        background: url(../img/Vector.png) no-repeat bottom left 60px;
+        width: 323px;
+        /* height: 200px; */
     }
     .second-layer img {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
         height: 80%;
         width: 400px;
-        left: -25px;
+        left: -17px;
     }
+    .second-layer {
+        width: 72%;
+        height: 100%;
+        background: url(../img/Vector.png) no-repeat top left 60px;
+        align-items: flex-end;
+    }
+    .first-layer p {
+        margin: 12px 75px 10px 54px;
+    }
+
+
     .first-layer {
-        background: url(../img/Vector.png) no-repeat top right 40px;
+        flex-direction: column-reverse;
+        background: url(../img/Vector.png) no-repeat bottom right 40px;
     }
+    
+    .first-layer-holder {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .wrapper p {
+        text-align: center;
+        width: 97px;
+    }
+}
+
+@media  (max-width: 425px), 
+        (max-height: 400px) {
+        .content-text {
+            left: 9%;
+            top: 13%;
+            position: absolute;
+        }
+        .navigation {
+            left: 40%;
+            transform: translateX(-30%);
+        }
+
+        .first-layer img {
+            right: -20px;
+            clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0 100%);
+            width: 323px;
+            /* height: 200px; */
+        }
+        .wrapper-info {
+            top: 2%;
+            left: -21%;
+        }
+        .check-box p {
+            color: #FEFEFE;
+            font-family: Roboto;
+            font-size: 1em;
+            text-align: center;
+            margin-right: 40px;
+        }
+        .check-box input {
+            border: none;
+            width: 24px;
+            height: 24px;
+            background: #FEFEFE;
+            margin-left: 45px;
+        }
+        .fourth-block>p {
+            margin-left: 15%;
+            margin-right: 20%;
+        }
+        .map-holder {
+            align-items: center;
+            display: grid;
+            grid-template-columns: 0.1fr 0.8fr;
+        }
+        .map-holders {
+            margin-left: -133px;
+        }
+        footer {
+            height: 354px;
+        }
 }
