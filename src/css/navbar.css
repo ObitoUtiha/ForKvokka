@@ -99,7 +99,7 @@
 
 /* 480px */
 
-@media (max-width: 580px){
+@media (max-width: 871px){
     .nav-content{
         display: none;
     }
@@ -112,5 +112,6 @@
         position: absolute;
         right: auto;
         left: auto;
+        z-index: 10;
     }
 }
